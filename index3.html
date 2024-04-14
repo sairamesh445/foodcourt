@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Food</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20230212/ourmid/pngtree-restaurant-logo-design-png-image_6594084.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anta&family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Fredoka:wght@300..700&family=Julee&family=Orbitron:wght@400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+      *{
+        font-family: "Orbitron", sans-serif;
+      }
+      body{
+        background-image: url('https://candlelightdinners.in/wp-content/uploads/2022/03/istockphoto-516401834-612x612-1.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+      }
+      .navbar{
+        padding-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: fixed;
+          width: 100%;
+          z-index: 9999;
+          background-color: bisque;
+          background-image: url('https://candlelightdinners.in/wp-content/uploads/2022/03/istockphoto-516401834-612x612-1.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .a{
+        padding: 20px;
+      }
+      .rnavbar{
+        padding-right: 110px;
+      }
+      .lnavbar{
+        padding-left: 250px;
+      }
+      button {
+        font-size: 1rem;
+        padding: 0.8em 2em;
+        background-color: #000;
+        border: 3px solid yellow;
+        border-radius: 1em;
+        color: #fff;
+        font-weight: bolder;
+        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+        box-shadow: -5px 5px 0px 0px yellow;
+      }
+      button:hover {
+        transform: translate(5px, -5px);
+      }
+      .form{
+        display: flex;
+        flex-direction: row;
+        padding-right: 160px;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="lnavbar">
+            <img style="height: 95px;" src="https://png.pngtree.com/png-clipart/20220903/ourmid/pngtree-chef-restaurant-logo-png-image_6136204.png" alt="">
+        </div>
+        <div class="rnavbar">
+          <a class="a" href="index.html"><button>Home</button></a>
+          <a class="a" href="index1.html"><button>About</button></a>
+          <a class="a" href="index2.html"><button>Menu</button></a>
+          <a class="a" href="index3.html"><button>Order Food</button></a>
+          <a class="a" href="index4.html"><button>Follow Us</button></a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><div data-aos="fade-left"><h1>Fill Below Form to Place the Order</h1></div></center>
+    <div class="form">
+
+    <form data-aos="fade-right" style="position: relative; left: 300px; top: 70px; margin-bottom: 30px; background-image: url('https://media.istockphoto.com/id/1073131372/vector/bokeh-background.jpg?s=612x612&w=0&k=20&c=VQU_yffbN2NrzxOfqHaK19Ry7rLSC8JBJmMGrTAk0HY='); background-repeat: no-repeat; background-size: cover; width: fit-content; padding: 50px; border-radius: 30px;">
+      <label for="">Full Name</label>
+      <input style="width: 550px;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Full Name">
+      <br>
+      <label for="">Enter Full Address</label>
+      <input style="width: 550px; height: 100px;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Full Address">
+      <br>
+      <label for="">Mobile Number</label>
+      <input style="width: 550px;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Mobile Number">
+      <br>
+      <label for="">Email</label>
+      <input style="width: 550px;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter E-mail">
+      <br>
+      <label for="recipe">Select Starters Here</label>
+      <select style="width: 550px;" class="form-select" aria-label="Default select example">
+        <option selected>Ohoose Starter</option>
+        <option value="1">Chickem Lollipos</option>
+        <option value="2">Cheese Panneer</option>
+        <option value="3">Chicken Leg Fry</option>
+        <option value="3">Tandoori Chicken</option>
+        <option value="3">Egg Dum Biryani</option>
+        <option value="3">Garlic Panneer</option>
+      </select>
+      <br>
+      <label for="recipe">Select Biryanis Here</label>
+      <select style="width: 550px;" class="form-select" aria-label="Default select example">
+        <option selected>Ohoose Biryani</option>
+        <option value="1">Chickem Dum Biryani</option>
+        <option value="2">Egg Dum Biryani</option>
+        <option value="3">Prwans Biryani</option>
+        <option value="3">Mixed Biryani</option>
+        <option value="3">Mutton Biryani</option>
+        <option value="3">Kunda Biryani</option>
+      </select>
+      <br>
+      <button type="button" class="btn btn-outline-secondary" style="color: black;">Place Order</button>
+    </form>
+    <img class="image" style="height: 400px; position: relative; top: 180px; left: 60px;" data-aos="fade-left" src="https://png.pngtree.com/png-clipart/20230323/original/pngtree-delivery-boy-illustration-hand-like-clipart-express-young-man-riding-red-png-image_8999823.png">
+  </div>
+    <br>
+    <br>
+    <br>
+    <footer style="background-color: rgb(16, 43, 45); color: #fff; padding: 30px; margin-top: 90px; display: flex; flex-direction: row; justify-content: space-between;">
+      <div style="margin-top: 30px;">
+        <h1>Ram's Food Court</h1>
+        <p style="color: white;">On the Earth, Pin Code-123456</p>
+        <p style="color: white;">Contact Us : +91-9876543210</p>
+      </div>
+      <img src="https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-lots-of-fried-chicken-in-a-white-bowl-png-image_10201217.png" style="height: 180px;">
+      <img src="https://pngbuy.com/wp-content/uploads/2023/06/Non-Veg-biryani-png.png" style="height: 180px;">
+      <img src="https://res.cloudinary.com/dns2f00mf/image/upload/v1713086010/png-transparent-south-indian-cuisine-south-indian-cuisine-vegetarian-cuisine-rasam-menu-food-recipe-eating-thumbnail-removebg-preview_yhuepi.png" style="height: 180px;">
+      <img src="https://res.cloudinary.com/dns2f00mf/image/upload/v1713086009/Chef-cartoon-character-illustration-on-transparent-background-PNG-removebg-preview_vaqyor.png" style="height: 180px;">
+  </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init({
+                duration: 3000,
+                once: true,
+              });
+            </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
